@@ -33,16 +33,15 @@ function obterProducts()
 	<meta property="og:description" content="">
 	<meta property="og:type" content="">
 	<meta property="og:image" content="">
-	<link rel="stylesheet" href="./assets/css/dark.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
 	<script src="https://cdn.tailwindcss.com"></script>
 	<script>
 		tailwind.config = {
 			theme: {
 				extend: {
 					colors: {
-						color1: '<?php echo $color1 ?>',
-						color2: '<?php echo $color2 ?>',
-						color3: '<?php echo $color3 ?>',
+						color1: '#3E4095',
+						color2: '#1D516C',
 					}
 				}
 			}
@@ -60,28 +59,26 @@ function obterProducts()
 				<div class="flex items-center lg:order-2">
 					<ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
 						<li>
-							<a href="#" class="block py-2 pl-3 pr-4 text-gray-800 hidden md:block rounded lg:p-0" aria-current="page">HOME</a>
+							<a href="#" class="block py-2 pl-3 pr-4 text-gray-800 hidden md:block rounded lg:p-0" aria-current="page">Sobre Nós</a>
 						</li>
 						<li>
-							<a href="#servicos" class="block py-2 pl-3 pr-4 text-gray-800 hidden md:block rounded lg:p-0" aria-current="page">SERVIÇOS</a>
+							<a href="#servicos" class="block py-2 pl-3 pr-4 text-gray-800 hidden md:block rounded lg:p-0" aria-current="page">Pacotes</a>
 						</li>
 						<li>
-							<a href="quem-somos" class="block py-2 pl-3 pr-4 text-gray-800 hidden md:block rounded lg:p-0" aria-current="page">QUEM SOMOS</a>
+							<a href="quem-somos" class="block py-2 pl-3 pr-4 text-gray-800 hidden md:block rounded lg:p-0" aria-current="page">Disney</a>
 						</li>
 						<li>
-							<a href="#" class="block py-2 pl-3 pr-4 text-gray-800 hidden md:block rounded lg:p-0" aria-current="page">CONTATO</a>
+							<a href="#" class="block py-2 pl-3 pr-4 text-gray-800 hidden md:block rounded lg:p-0" aria-current="page">Intercâmbios</a>
+						</li>
+						<li>
+							<a href="#" class="block py-2 pl-3 pr-4 font-ligth text-gray-800 hidden md:block rounded lg:p-0" aria-current="page">Ônibus</a>
+						</li>
+						<li>
+							<div class="hidden sm:inline-block">
+								<a href="login" class="text-white bg-color1 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-3xl text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 focus:outline-none">LOGIN</a>
+							</div>
 						</li>
 					</ul>
-					<div class="hidden mt-2 mr-4 sm:inline-block">
-						<a href="<?php echo $btn_link; ?>" class="text-color2 bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">LOGIN</a>
-					</div>
-					<span id="theme_toggler">
-						<a class="text-color2">
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-								<path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
-							</svg>
-						</a>
-					</span>
 					<button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-color2 rounded-lg lg:hidden focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="mobile-menu-2" aria-expanded="false">
 						<span class="sr-only">Open main menu</span>
 						<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -113,19 +110,6 @@ function obterProducts()
 		</nav>
 	</header>
 	<section>
-		<style>
-			.divfram {
-				width: 100%;
-				height: 300px;
-				overflow: hidden;
-			}
-
-			iframe {
-				position: absolute;
-				width: 100%;
-				height: 768px;
-			}
-		</style>
 		<div class="divframe">
 			<iframe src="https://mtourfront7.cangooroodns.com.br/whitelabel" scrolling="no" frameborder="no"></iframe>
 		</div>
