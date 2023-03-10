@@ -1,52 +1,22 @@
 <?php
 require "./config/db_config.php";
-
-// Obter a lista de clientes
+require "./admin/functions/list_clients.php";
 $products = obterProducts();
-
-// Função para obter a lista de clientes
-function obterProducts()
-{
-	global $pdo;
-	$stmt = $pdo->prepare("SELECT * FROM products");
-	$stmt->execute();
-	return $stmt->fetchAll(PDO::FETCH_ASSOC);
-}
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+	<?php include "./components/head_core.php"; ?>
 	<title>Miraceu Digital</title>
-
 	<meta name="title" content="Miraceu Digital">
 	<meta name="description" content="Miraceu Digital">
-	<meta name="author" content="Cairo">
-
 	<meta property="og:title" content="Landwind - Tailwind CSS Landing Page">
 	<meta property="og:site_name" content="">
 	<meta property="og:url" content="" />
 	<meta property="og:description" content="">
 	<meta property="og:type" content="">
 	<meta property="og:image" content="">
-	<link rel="stylesheet" href="./assets/css/style.css">
-	<script src="https://cdn.tailwindcss.com"></script>
-	<script>
-		tailwind.config = {
-			theme: {
-				extend: {
-					colors: {
-						color1: '#3E4095',
-						color2: '#1D516C',
-					}
-				}
-			}
-		}
-	</script>
 </head>
 
 <body>

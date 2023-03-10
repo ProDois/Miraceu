@@ -15,11 +15,8 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
   echo 'Endereço de email inválido.';
   exit;
 }
-
-// Criptografia da senha
 $password_cript = password_hash($password, PASSWORD_DEFAULT);
 
-// Inserção do novo usuário na tabela
 $sql = "INSERT INTO users (name, email, password) VALUES (?, ?, ?)";
 $stmt = $pdo->prepare($sql);
 $resultado = $stmt->execute([$name, $email, $password_cript]);

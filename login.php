@@ -8,11 +8,11 @@
 
 <body>
   <h1>Login</h1>
-  <form action="./controllers/auth.php" method="post">
+  <form action="./admin/controllers/auth.php" method="post">
     <label for="email">Email:</label>
     <input type="email" name="email" id="email" required><br>
-    <label for="senha">Senha:</label>
-    <input type="password" name="senha" id="senha" required><br>
+    <label for="password">Senha:</label>
+    <input type="password" name="password" id="password" required><br>
     <input type="submit" value="Entrar">
   </form>
   <a href="registro.php">Registre-se clicando aqui</a>
